@@ -1,0 +1,16 @@
+title: Develop the website
+description: 'How to develop the website and it works all of by example '
+template:
+  repo: develop-the-website-template
+  name: develop-the-website
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
